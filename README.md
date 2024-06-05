@@ -21,7 +21,11 @@ Ce cours s'appuie sur des exemples en PHP et utilise le framework Symfony. Vous 
     - [Faire évoluer une fonctionnalité](#faire-évoluer-une-fonctionnalité)
     - [Gagner en lisibilité](#gagner-en-lisibilité)
   - [Quand refactoriser](#quand-refactoriser)
-  - [Les prérequis](#les-prérequis)
+  - [Les prérequis - comprendre le code à refactoriser](#les-prérequis---comprendre-le-code-à-refactoriser)
+    - [La documentation](#la-documentation)
+    - [Les tests](#les-tests)
+    - [Exécuter le code](#exécuter-le-code)
+    - [Schematiser le fonctionnement](#schematiser-le-fonctionnement)
   - [Les méthodes](#les-méthodes)
     - [Renommage de fonctions et de variables](#renommage-de-fonctions-et-de-variables)
     - [Fail fast](#fail-fast)
@@ -69,10 +73,29 @@ On va choisir de refactoriser du code pour 3 raisons :
 ## Quand refactoriser
 
 
-## Les prérequis
+## Les prérequis - comprendre le code à refactoriser
 
+Avant de refactoriser du code, il est impératif d'avoir une compréhension étendue de ce code, des fonctionnalités qu'il contient, des contraintes techniques et métiers qui s'appliquent. Se lancer dans de la refactorisation sans avoir fait cette analyse provoquera à coup sûr des problèmes. Dans le meilleur des cas, vous perdrez du temps dans votre refactorisation lorsque vous découvrirez au fur et à mesure les fonctionnalités. Dans le pire des cas, vous risquerez d'ajouter des régressions et de perdre des fonctionnalités, voir de faire crasher l'application. Vous pourrez également vous rendre compte que la refactorisation n'était pas nécessaire car le code était déjà dans son état le plus propre.
+
+### La documentation
+
+Pour mener à bien cette analyse, vous pouvez vous appuyer sur de la documentation.
+
+### Les tests
+
+Si l'application n'est pas documentée, vous pouvez vous appuyer sur les tests écrits.
+
+### Exécuter le code
+
+Si l'application n'est pas testée, il ne vous reste plus qu'à l'exécuter.
+
+### Schematiser le fonctionnement
+
+Une fois l'analyse terminée, il est important de mettre à l'écrit ce que vous avez trouvé.
 
 ## Les méthodes
+
+Pour refactoriser efficacement dans le but de gagner en lisibilité et sans perdre de fonctionnalités, je propose 7 méthodes. Cette liste n'est pas exhaustive et d'autres méthodes peuvent exister. Nous aborderons ces méthodes dans l'ordre dans lequel je les applique pour limiter les erreurs et progresser efficacement.
 
 ### Renommage de fonctions et de variables
 
