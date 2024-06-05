@@ -1,0 +1,6 @@
+[submodule "refactorisation_exercices"]
+	path = refactorisation_exercices
+	url = https://github.com/deozza/refactorisation_exercices
+[submodule "refactorisation_projet"]
+	path = refactorisation_projet
+	url = https://github.com/deozza/refactorisation_projet
